@@ -1,0 +1,12 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    color: #fff;
+    background: coral;
+    border: none;
+    border-radius:3px;
+    width: 100px;
+}

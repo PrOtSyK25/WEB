@@ -1,0 +1,12 @@
+@import './blocks/header/header';
+@import './blocks/card/card';
+@import './blocks/footer/footer';
+
+.page {
+  background-color: firebrick;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}

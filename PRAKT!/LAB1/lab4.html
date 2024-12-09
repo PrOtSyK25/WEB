@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .planner {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            grid-column: span 7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+        }
+        .day, .todo, .note {
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            min-height: 100px;
+        }
+        .day h2, .todo h2 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .checkbox input {
+            margin-right: 10px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .note {
+            grid-column: span 2;
+        }
+        .day {
+            grid-column: span 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weekly Planner</h1>
+    <div class="planner">
+        <!-- Header -->
+        <div class="header">
+            <span>Week of: <input type="text" class="input-field" placeholder="Enter week (e.g., Dec 1-7)"></span>
+            <span>Healthy Habit: <input type="text" class="input-field" placeholder="e.g., Drink Water"></span>
+            <span>Rocked It: <input type="checkbox"></span>
+            <span>Room for Improvement: <input type="checkbox"></span>
+        </div>
+
+        <!-- Sidebar (To-do List) -->
+        <div class="todo">
+            <h2>To-Do</h2>
+            <div class="checkbox">
+                <input type="checkbox">
+                <input type="text" class="input-field" placeholder="Top Goal 1">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox">
+                <input type="text" class="input-field" placeholder="Top Goal 2">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox">
+                <input type="text" class="input-field" placeholder="Top Goal 3">
+            </div>
+            <h2>Everything Else</h2>
+            <div class="checkbox">
+                <input type="checkbox">
+                <input type="text" class="input-field" placeholder="Task 1">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox">
+                <input type="text" class="input-field" placeholder="Task 2">
+            </div>
+            <h2>Next Week</h2>
+            <div class="checkbox">
+                <input type="checkbox">
+                <input type="text" class="input-field" placeholder="Plan Ahead">
+            </div>
+        </div>
+
+        <!-- Days -->
+        <div class="day">
+            <h2>Monday</h2>
+            <textarea class="input-field" placeholder="Notes for Monday"></textarea>
+        </div>
+        <div class="day">
+            <h2>Tuesday</h2>
+            <textarea class="input-field" placeholder="Notes for Tuesday"></textarea>
+        </div>
+        <div class="day">
+            <h2>Wednesday</h2>
+            <textarea class="input-field" placeholder="Notes for Wednesday"></textarea>
+        </div>
+        <div class="day">
+            <h2>Thursday</h2>
+            <textarea class="input-field" placeholder="Notes for Thursday"></textarea>
+        </div>
+        <div class="day">
+            <h2>Friday</h2>
+            <textarea class="input-field" placeholder="Notes for Friday"></textarea>
+        </div>
+        <div class="day">
+            <h2>Saturday</h2>
+            <textarea class="input-field" placeholder="Notes for Saturday"></textarea>
+        </div>
+        <div class="day">
+            <h2>Sunday</h2>
+            <textarea class="input-field" placeholder="Notes for Sunday"></textarea>
+        </div>
+    </div>
+</body>
+</html>

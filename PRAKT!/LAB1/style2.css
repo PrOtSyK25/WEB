@@ -1,0 +1,60 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Світло-блакитний фон */
+    color: #333; /* Текст темно-сірий */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Контейнер форми */
+.cont {
+    background-color: #ffffff; /* Білий фон форми */
+    width: 400px; /* Ширина */
+    padding: 20px; /* Внутрішні відступи */
+    border-radius: 15px; /* Закруглені кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь */
+    text-align: center; /* Текст вирівняний по центру */
+}
+
+/* Заголовок форми */
+.cont h1 {
+    margin-bottom: 20px;
+    color: #2c3e50; /* Темно-синій */
+}
+
+/* Поля введення */
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], select {
+    width: calc(100% - 20px); /* Ширина з урахуванням відступів */
+    padding: 10px; /* Внутрішній відступ */
+    margin: 10px 0; /* Зовнішні відступи */
+    border: 1px solid #ccc; /* Сіра рамка */
+    border-radius: 5px; /* Легке закруглення */
+    font-size: 14px;
+}
+
+/* Кнопка */
+button {
+    background-color: #3498db; /* Синій фон */
+    color: white; /* Білий текст */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9; /* Темніший синій при наведенні */
+}
+
+/* Адаптивне позиціювання */
+@media (max-width: 500px) {
+    .cont {
+        width: 90%; /* Зменшення ширини на малих екранах */
+    }
+}

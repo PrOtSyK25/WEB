@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <style>
+    /* Общие стили */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 24px;
+    }
+    nav a {
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    /* Hero секция */
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fff;
+      margin-bottom: 30px;
+    }
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+    .hero .btn {
+      background-color: #ff4c60;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .hero .btn:hover {
+      background-color: #e74354;
+    }
+
+    /* Блок "Recent Posts" */
+    .recent-posts {
+      margin-bottom: 40px;
+    }
+    .recent-posts h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .posts-grid {
+      display: flex;
+      gap: 20px;
+    }
+    .post {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex: 1;
+    }
+    .post h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .post p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* Featured works */
+    .featured-works {
+      margin-bottom: 40px;
+    }
+    .featured-works h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .work-item {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .work-item h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .work-item p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #fff;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+    footer a {
+      margin: 0 10px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <h1>Hi, I am John</h1>
+    <nav>
+      <a href="#">Works</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I am John, Creative Technologist</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    <button class="btn">Download Resume</button>
+  </section>
+
+  <section class="recent-posts container">
+    <h3>Recent Posts</h3>
+    <div class="posts-grid">
+      <div class="post">
+        <h4>Making a design system from scratch</h4>
+        <p>12 Feb 2020 | Design, Pattern</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae.</p>
+      </div>
+      <div class="post">
+        <h4>Creating pixel perfect icons in Figma</h4>
+        <p>12 Feb 2020 | Figma, Icon Design</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-works container">
+    <h3>Featured Works</h3>
+    <div class="work-item">
+      <h4>Designing Dashboards</h4>
+      <p>2020 | Dashboard</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </div>
+    <div class="work-item">
+      <h4>Vibrant Portraits of 2020</h4>
+      <p>Illustration</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </div>
+    <div class="work-item">
+      <h4>36 Days of Malayalam type</h4>
+      <p>Typography</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright © 2023 All rights reserved</p>
+    <p>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>

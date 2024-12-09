@@ -1,0 +1,19 @@
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+  
+    &__image {
+      max-width: 100px;
+      margin: 10px 0;
+    }
+  
+    &__text {
+      font-size: 1.2rem;
+      color: #ffde59;
+    }
+  }
+  
